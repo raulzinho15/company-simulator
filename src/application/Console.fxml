@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="300.0" maxWidth="550.0" minHeight="300.0" minWidth="550.0" onKeyPressed="#keyPressed" onKeyReleased="#keyReleased" onMouseMoved="#mouseMoved" onScroll="#mouseScroll" prefHeight="300.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConsoleController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="550.0" pickOnBounds="true">
+         <image>
+            <Image url="img/technical/blackScreen.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="233.0" prefWidth="530.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTxt" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="255.0" prefHeight="31.0" prefWidth="530.0" text="> |" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="243.0" layoutY="1081.0" mnemonicParsing="false" onAction="#space" text="Button" />
+   </children>
+</AnchorPane>

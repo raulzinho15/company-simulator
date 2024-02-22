@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" onKeyPressed="#keyPressed" onKeyReleased="#keyReleased" onMouseEntered="#mouseAction" onMouseExited="#mouseAction" onMouseMoved="#mouseAction" onMousePressed="#mousePressed" onMouseReleased="#mouseAction" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TutorialController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="img/backgrounds/companyBackground800x600.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="key2" fitHeight="24.0" fitWidth="60.0" layoutX="14.0" layoutY="496.0" pickOnBounds="true">
+         <image>
+            <Image url="img/technical/hotkey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="key1" fitHeight="24.0" fitWidth="60.0" layoutX="14.0" layoutY="463.0" pickOnBounds="true">
+         <image>
+            <Image url="img/technical/hotkey.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="keyName1" alignment="CENTER" layoutX="14.0" layoutY="463.0" prefHeight="24.0" prefWidth="60.0" text="#" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="keyName2" alignment="CENTER" layoutX="14.0" layoutY="496.0" prefHeight="24.0" prefWidth="60.0" text="#" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="keyImage1" fitHeight="32.0" fitWidth="32.0" layoutX="89.0" layoutY="461.0" pickOnBounds="true">
+         <image>
+            <Image url="img/workers/farmer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="keyImage2" fitHeight="32.0" fitWidth="32.0" layoutX="89.0" layoutY="493.0" pickOnBounds="true">
+         <image>
+            <Image url="img/workers/farmer.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAmountChange1" layoutX="79.0" layoutY="464.0" text="+" textFill="#036800">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAmountChange2" alignment="CENTER" layoutX="79.0" layoutY="499.0" prefHeight="20.0" prefWidth="10.0" text="-" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="workerName1" layoutX="129.0" layoutY="466.0" prefWidth="150.0" text="Rancher">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="workerName2" layoutX="129.0" layoutY="499.0" prefWidth="150.0" text="Rancher">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="keyImage3" fitHeight="32.0" fitWidth="32.0" layoutX="89.0" layoutY="525.0" pickOnBounds="true" visible="false" />
+      <ImageView fx:id="keyImage4" fitHeight="32.0" fitWidth="32.0" layoutX="89.0" layoutY="557.0" pickOnBounds="true" visible="false" />
+      <Label fx:id="lblAmountChange3" layoutX="79.0" layoutY="528.0" text="+" textFill="#036800" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAmountChange4" alignment="CENTER" layoutX="79.0" layoutY="563.0" prefHeight="20.0" prefWidth="10.0" text="-" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="workerName3" layoutX="129.0" layoutY="530.0" prefWidth="150.0" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="workerName4" layoutX="129.0" layoutY="563.0" prefWidth="150.0" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="key4" fitHeight="24.0" fitWidth="60.0" layoutX="14.0" layoutY="561.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="img/technical/hotkey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="key3" fitHeight="24.0" fitWidth="60.0" layoutX="14.0" layoutY="528.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="img/technical/hotkey.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="keyName3" alignment="CENTER" layoutX="14.0" layoutY="528.0" prefHeight="24.0" prefWidth="60.0" text="#" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="keyName4" alignment="CENTER" layoutX="14.0" layoutY="561.0" prefHeight="24.0" prefWidth="60.0" text="#" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="bMiddle" fitHeight="100.0" fitWidth="64.0" layoutX="368.0" layoutY="345.0" pickOnBounds="true">
+         <image>
+            <Image url="img/buildings/middle/mTier1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bTop" fitHeight="25.0" fitWidth="64.0" layoutX="368.0" layoutY="320.0" pickOnBounds="true">
+         <image>
+            <Image url="img/buildings/top/tTier1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bBottom" fitHeight="7.0" fitWidth="64.0" layoutX="368.0" layoutY="445.0" pickOnBounds="true">
+         <image>
+            <Image url="img/buildings/bottom/bTier1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="itemImage" fitHeight="32.0" fitWidth="32.0" layoutX="384.0" layoutY="509.0" pickOnBounds="true">
+         <image>
+            <Image url="img/resources/food/food.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="itemName" alignment="CENTER" layoutY="465.0" prefHeight="21.0" prefWidth="800.0" text="FOOD" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="368.0" layoutY="671.0" mnemonicParsing="false" text="Button" />
+      <Label fx:id="itemAmount" alignment="CENTER" layoutX="326.0" layoutY="543.0" prefHeight="27.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRank" layoutX="5.0" layoutY="5.0" prefHeight="30.0" prefWidth="363.0" text="Rank: 0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMoney" layoutX="5.0" layoutY="40.0" prefHeight="30.0" prefWidth="363.0" text="Moneyz: M$0.00">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="costImage1" fitHeight="32.0" fitWidth="32.0" layoutX="763.0" layoutY="462.0" pickOnBounds="true">
+         <image>
+            <Image url="img/workers/farmer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="costImage2" fitHeight="32.0" fitWidth="32.0" layoutX="763.0" layoutY="495.0" pickOnBounds="true" />
+      <ImageView fx:id="costImage3" fitHeight="32.0" fitWidth="32.0" layoutX="763.0" layoutY="528.0" pickOnBounds="true" />
+      <Label fx:id="lblCost1" alignment="CENTER_RIGHT" layoutX="609.0" layoutY="470.0" prefWidth="150.0" text="Cost: 10 Food | M$5.00">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCost2" alignment="CENTER_RIGHT" layoutX="609.0" layoutY="506.0" prefWidth="150.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCost3" alignment="CENTER_RIGHT" layoutX="609.0" layoutY="542.0" prefWidth="150.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrice" alignment="CENTER_RIGHT" layoutX="431.0" layoutY="421.0" prefHeight="30.0" prefWidth="363.0" text="Price: M$#" textAlignment="RIGHT" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem1" alignment="CENTER_RIGHT" layoutX="432.0" layoutY="5.0" prefHeight="30.0" prefWidth="363.0" text="Ranchers: 0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem2" alignment="CENTER_RIGHT" layoutX="432.0" layoutY="40.0" prefHeight="30.0" prefWidth="363.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItem3" alignment="CENTER_RIGHT" layoutX="432.0" layoutY="75.0" prefHeight="30.0" prefWidth="363.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="storageBackground" fitHeight="500.0" fitWidth="700.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="img/backgrounds/popUpBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgResource" fitHeight="32.0" fitWidth="32.0" layoutX="88.0" layoutY="174.0" onMousePressed="#mousePressed" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="img/resources/food/fish.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="storageLabel" layoutX="130.0" layoutY="177.0" text="Fish: 0" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" alignment="TOP_CENTER" layoutX="220.0" layoutY="20.0" prefHeight="123.0" prefWidth="363.0" text="Welcome to Company Simulator! To begin, left-click 20 more times to get 20 Food." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCompetitorCompany" alignment="CENTER" layoutX="50.0" layoutY="170.0" prefHeight="30.0" prefWidth="700.0" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCompetitorResource" fitHeight="64.0" fitWidth="64.0" layoutX="368.0" layoutY="270.0" pickOnBounds="true" visible="false" />
+      <Label fx:id="lblCompetitorName" alignment="CENTER" layoutX="50.0" layoutY="345.0" prefHeight="30.0" prefWidth="700.0" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCompetitorPrice" alignment="CENTER" layoutX="50.0" layoutY="380.0" prefHeight="30.0" prefWidth="700.0" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCompetitorAmount" alignment="CENTER" layoutX="50.0" layoutY="455.0" prefHeight="30.0" prefWidth="700.0" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
